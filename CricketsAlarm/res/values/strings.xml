@@ -3,19 +3,19 @@
     <string name="app_name">CricketsAlarm</string>
     <string name="create_widget">Create widget</string>
     <string name="cancel">Cancel</string>
-    <string name="configure_intro">Select the nap duration for this widget:</string>
+    <string name="configure_intro">Select the duration for this widget:</string>
     <string name="default_widget_label">zZz</string>
-    <string name="toast_alarm_started">Alarm will ring at <xliff:g id="duration">%1$s</xliff:g>. Have a good rest.</string>
+    <string name="toast_alarm_started">Alarm will ring at <xliff:g id="duration">%1$s</xliff:g>.</string>
     <string name="toast_alarm_canceled">Alarm was canceled.</string>
-    <string name="wake_up">Time to wake up!</string>
-    <string name="snooze">Just a few more minutes</string>
-    <string name="dismiss">Ok, I\'ll wake up. I need some coffee</string>
+    <string name="wake_up">Time for meds!</string>
+    <string name="snooze">Remind me in an hour.</string>
+    <string name="dismiss">Ok, I\'ll do it.</string>
     <string name="alarm_snoozed">Alarm will ring again in 1 hour.</string>
     <string name="app_description"><b>Time meds with Cricket\'s Alarm widget.</b>\n\n
 <li>Long click on home screen</li>\n
 <li>Choose Widget > CricketsAlarm</li>\n
-<li>Configure nap time</li>\n
-<li>Just tap on the widget: alarm is setup, and silent mode is on</li>\n\n
+<li>Configure alarm time</li>\n
+<li>Just tap on the widget: alarm is set up.</li>\n\n
 
 <b>You just need to know this:</b>\n\n
 <li>We use the default system alarm volume and ringtone</li>\n
