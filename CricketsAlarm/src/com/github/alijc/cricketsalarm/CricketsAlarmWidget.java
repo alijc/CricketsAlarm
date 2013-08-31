@@ -281,7 +281,7 @@ public class CricketsAlarmWidget extends AppWidgetProvider {
         Time t = new Time();
         t.setToNow();
         t.set(t.toMillis(false) +napDuration);
-        return t.format("%l:%M");
+        return t.format("%l:%M%P");
     }
 
     /**

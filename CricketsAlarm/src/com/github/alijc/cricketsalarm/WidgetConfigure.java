@@ -20,7 +20,7 @@
 
 package com.github.alijc.cricketsalarm;
 
-//import fr.miximum.picker.NumberPicker;
+import fr.miximum.picker.NumberPicker;
 
 import android.app.Activity;
 import android.appwidget.AppWidgetManager;
@@ -40,8 +40,8 @@ public class WidgetConfigure extends Activity {
     /** The default number of minutes for the nap duration */
     private static final int DEFAULT_NAP_MINUTES = 0;
 
-	//private NumberPicker mHourPicker;
-    //private NumberPicker mMinutePicker;
+    private NumberPicker mHourPicker;
+    private NumberPicker mMinutePicker;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -67,7 +67,7 @@ public class WidgetConfigure extends Activity {
             finish();
         }
 
-        //configurePickers();
+        configurePickers();
         findViewById(R.id.create_widget).setOnClickListener(mOnCreateClickListener);
         findViewById(R.id.cancel_widget).setOnClickListener(mOnCancelClickListener);
     }
@@ -105,15 +105,15 @@ public class WidgetConfigure extends Activity {
     /**
      * Configure nap duration pickers with correct ranges and default values
      */
-    // private void configurePickers() {
-    //     mHourPicker = (NumberPicker) findViewById(R.id.nap_hour);
-    //     mHourPicker.setRange(0, 23);
-    //     mHourPicker.setCurrent(DEFAULT_NAP_HOURS);
+    private void configurePickers() {
+        mHourPicker = (NumberPicker) findViewById(R.id.nap_hour);
+        mHourPicker.setRange(0, 23);
+        mHourPicker.setCurrent(DEFAULT_NAP_HOURS);
 
-    //     mMinutePicker = (NumberPicker) findViewById(R.id.nap_minute);
-    //     mMinutePicker.setRange(0, 59);
-    //     mMinutePicker.setCurrent(DEFAULT_NAP_MINUTES);
-    // }
+        mMinutePicker = (NumberPicker) findViewById(R.id.nap_minute);
+        mMinutePicker.setRange(0, 59);
+        mMinutePicker.setCurrent(DEFAULT_NAP_MINUTES);
+    }
 
     /**
      * Computes the total nap duration
@@ -121,7 +121,7 @@ public class WidgetConfigure extends Activity {
      */
     public int getNapDuration()
     {
-		return 12 * 60;
-        //return mHourPicker.getCurrent() * 60 + mMinutePicker.getCurrent();
+        //return 12 * 60;
+        return mHourPicker.getCurrent() * 60 + mMinutePicker.getCurrent();
     }
 }
