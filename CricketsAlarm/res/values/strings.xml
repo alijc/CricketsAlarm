@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">CricketsAlarm</string>
+    <string name="app_name">Cricket\'s Alarm</string>
     <string name="create_widget">Create widget</string>
     <string name="cancel">Cancel</string>
     <string name="configure_intro">Select the duration for this widget:</string>
@@ -26,6 +26,7 @@
 If you meet a bug or have a feature request, you can contact me here :\n\n
 https://github.com/alijc/CricketsAlarm/issues\n\n
 
+The source code can be found at https://github.com/alijc/CricketsAlarm
 (With many thanks to Thibault Jouannic. https://github.com/thibault/Napply)
     </string>
 </resources>
